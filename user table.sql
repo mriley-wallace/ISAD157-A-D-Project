@@ -6,4 +6,5 @@ CREATE TABLE `isad157_mriley-wallace` . `users`(
 `gender` VARCHAR(10) NOT NULL,
 `relationshipStatus` VARCHAR(20) NOT NULL,
 `currentTown` VARCHAR(40) NOT NULL,
+`occupation_id` INT NOT NULL,
 PRIMARY KEY (`user_id`));
