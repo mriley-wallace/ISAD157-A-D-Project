@@ -1,0 +1,1 @@
+LOAD DATA INFILE 'C:/Users/Public/Messages.csv' INTO TABLE messages FIELDS TERMINATED BY ';' LINES TERMINATED BY '\n' (user_id, friend_id, date_time, message_text);

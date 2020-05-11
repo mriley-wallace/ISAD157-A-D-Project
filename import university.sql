@@ -1,0 +1,1 @@
+LOAD DATA INFILE 'C:/Users/Public/universities.csv' INTO TABLE universities FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (user_id, university)
