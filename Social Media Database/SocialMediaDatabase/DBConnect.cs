@@ -12,7 +12,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-namespace SOFT562Week18
+namespace SMConnect
 {
     class DBConnect
     {
