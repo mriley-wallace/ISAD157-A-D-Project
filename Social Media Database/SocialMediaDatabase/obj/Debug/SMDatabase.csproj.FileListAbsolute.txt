@@ -36,3 +36,4 @@ C:\Users\midge\Documents\GitHub\ISAD157-A-D-Project\Social Media Database\Social
 C:\Users\midge\Documents\GitHub\ISAD157-A-D-Project\Social Media Database\SocialMediaDatabase\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\midge\Documents\GitHub\ISAD157-A-D-Project\Social Media Database\SocialMediaDatabase\bin\Debug\MySql.Data.xml
 C:\Users\midge\Documents\GitHub\ISAD157-A-D-Project\Social Media Database\SocialMediaDatabase\obj\Debug\SMDatabase.csproj.CopyComplete
+C:\Users\midge\Documents\GitHub\ISAD157-A-D-Project\Social Media Database\SocialMediaDatabase\obj\Debug\SOFT562Week18.DBMain.resources

@@ -29,55 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatabaseForm));
-            this.dataGridViewCustomer = new System.Windows.Forms.DataGridView();
-            this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
-            this.comboBoxQueryChoice = new System.Windows.Forms.ComboBox();
             this.titleName = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
+            this.connectTrue = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // dataGridViewCustomer
-            // 
-            this.dataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCustomer.Location = new System.Drawing.Point(39, 330);
-            this.dataGridViewCustomer.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewCustomer.Name = "dataGridViewCustomer";
-            this.dataGridViewCustomer.RowHeadersWidth = 51;
-            this.dataGridViewCustomer.RowTemplate.Height = 24;
-            this.dataGridViewCustomer.Size = new System.Drawing.Size(276, 301);
-            this.dataGridViewCustomer.TabIndex = 0;
-            this.dataGridViewCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCustomer_CellContentClick);
-            // 
-            // dataGridViewProduct
-            // 
-            this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProduct.Location = new System.Drawing.Point(926, 330);
-            this.dataGridViewProduct.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewProduct.Name = "dataGridViewProduct";
-            this.dataGridViewProduct.RowHeadersWidth = 51;
-            this.dataGridViewProduct.RowTemplate.Height = 24;
-            this.dataGridViewProduct.Size = new System.Drawing.Size(273, 301);
-            this.dataGridViewProduct.TabIndex = 1;
-            this.dataGridViewProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProduct_CellContentClick);
-            // 
-            // comboBoxQueryChoice
-            // 
-            this.comboBoxQueryChoice.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxQueryChoice.FormattingEnabled = true;
-            this.comboBoxQueryChoice.Items.AddRange(new object[] {
-            "Users",
-            "Messages"});
-            this.comboBoxQueryChoice.Location = new System.Drawing.Point(334, 569);
-            this.comboBoxQueryChoice.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxQueryChoice.Name = "comboBoxQueryChoice";
-            this.comboBoxQueryChoice.Size = new System.Drawing.Size(569, 29);
-            this.comboBoxQueryChoice.TabIndex = 2;
-            this.comboBoxQueryChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxQueryChoice_SelectedIndexChanged);
             // 
             // titleName
             // 
@@ -85,7 +43,7 @@
             this.titleName.BackColor = System.Drawing.Color.Transparent;
             this.titleName.Font = new System.Drawing.Font("Segoe Print", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleName.ForeColor = System.Drawing.Color.White;
-            this.titleName.Location = new System.Drawing.Point(306, 20);
+            this.titleName.Location = new System.Drawing.Point(595, 428);
             this.titleName.Name = "titleName";
             this.titleName.Size = new System.Drawing.Size(648, 168);
             this.titleName.TabIndex = 3;
@@ -99,7 +57,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(784, 229);
+            this.btnLogin.Location = new System.Drawing.Point(872, 683);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(154, 71);
             this.btnLogin.TabIndex = 4;
@@ -110,10 +68,11 @@
             // txtUsername
             // 
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Location = new System.Drawing.Point(425, 250);
+            this.txtUsername.Location = new System.Drawing.Point(783, 644);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(313, 13);
             this.txtUsername.TabIndex = 5;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // label1
             // 
@@ -121,7 +80,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(561, 226);
+            this.label1.Location = new System.Drawing.Point(906, 620);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 21);
             this.label1.TabIndex = 6;
@@ -142,41 +101,45 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // connectTrue
+            // 
+            this.connectTrue.AutoSize = true;
+            this.connectTrue.BackColor = System.Drawing.Color.Transparent;
+            this.connectTrue.Location = new System.Drawing.Point(172, 12);
+            this.connectTrue.Name = "connectTrue";
+            this.connectTrue.Size = new System.Drawing.Size(68, 13);
+            this.connectTrue.TabIndex = 8;
+            this.connectTrue.Text = "connectTrue";
+            this.connectTrue.Click += new System.EventHandler(this.connectTrue_Click);
+            // 
             // DatabaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1255, 717);
+            this.ClientSize = new System.Drawing.Size(1964, 981);
+            this.Controls.Add(this.connectTrue);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.titleName);
-            this.Controls.Add(this.comboBoxQueryChoice);
-            this.Controls.Add(this.dataGridViewProduct);
-            this.Controls.Add(this.dataGridViewCustomer);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DatabaseForm";
             this.Text = "Database Form Test";
             this.Load += new System.EventHandler(this.DatabaseForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewCustomer;
-        private System.Windows.Forms.DataGridView dataGridViewProduct;
-        private System.Windows.Forms.ComboBox comboBoxQueryChoice;
         private System.Windows.Forms.Label titleName;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label connectTrue;
     }
 }
 
