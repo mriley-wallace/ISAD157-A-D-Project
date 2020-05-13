@@ -1,4 +1,4 @@
-CREATE TABLE `sys` . `messages`(
+CREATE TABLE `isad157_mriley-wallace` . `messages`(
 `friend_id` INT NOT NULL AUTO_INCREMENT,
 `user_id` INT NOT NULL,
 `date_time` VARCHAR(100),

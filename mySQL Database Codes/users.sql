@@ -1,4 +1,4 @@
-CREATE TABLE `sys` . `users`(
+CREATE TABLE `isad157_mriley-wallace` . `users`(
 `user_id` INT NOT NULL AUTO_INCREMENT,
 `first_name` VARCHAR(40) NOT NULL,
 `last_name` VARCHAR(40) NOT NULL,
